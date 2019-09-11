@@ -10,6 +10,8 @@ In this assignment, you'll practice:
 * Defining and using class variables
 * Defining and calling class instances
 
+This assignment can be challenging! Feel free to collaborate with other students on this assignment, but you should still hand in your own assignment.
+
 ## Deliverables and Submitting
 
 You know what you're doing by now! :grin:
@@ -28,7 +30,9 @@ Write your code in a file named `part1.py`.
 1. Add an instance method called `deposit` that accepts a number as an argument and adds that amount to that account's balance.
    `deposit` needs to be an instance method because it pertains to a *single, specific* account.
 1. Add an instance method called `withdraw` that accepts a number as an argument and subtracts that amount from the account's balance.
-1. Add a *class method* called `create` that makes a new instance of `BankAccount` and adds the new instance to the `accounts` class variable so that we can find it again in the future. This method should return the new account object.
+   (What should happen if you try to withdraw more money than you have?)
+1. Add a *class method* called `create` that makes a new instance of `BankAccount` and adds it to the `accounts` class variable so that it is kept track of.
+  `create` should return the new account object.
   `create` needs to be a class method because *at the time we run it* there is no *single, specific* account instance that we are working on.
 1. Add a class method called `total_funds` that returns the sum of all balances across all accounts in the `accounts` class variable.  
    `total_funds` needs to be a class method because it *does not* pertain to any *single, specific* account.
@@ -68,7 +72,9 @@ Write your code in a file named `part2.py`.
 
 Now that you've had some experience using class variables and methods it's time to test your knowledge of _when_ to use them.
 
-Your task is to create a `Vampire` class that stores a list of vampires (a coven, if you will). Every vampire has a `name`, `age`, an `in_coffin` boolean, and a `drank_blood_today` boolean.
+Your task is to create a `Vampire` class that stores a list of vampires (a coven, if you will).
+
+Every vampire has a `name`, `age`, an `in_coffin` boolean, and a `drank_blood_today` boolean.
 
 Every day at sunset the vampires leave their coffins in search of blood. If they don't drink blood and get back to their coffins before sunrise, they die.
 
