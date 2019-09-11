@@ -18,6 +18,8 @@ You know what you're doing by now! :grin:
 
 # Part 1: Bank Account
 
+Write your code in a file named `part1.py`.
+
 1. Create a class called `BankAccount`.
 1. Add a *class variable* called `interest_rate` that is a **float** representing the interest rate for all the accounts in the bank. This is a class variable because it is used across all of the accounts.
 1. Add another class variable called `accounts` that starts as an empty list. This will eventually store the collection of all bank accounts in the bank.
@@ -63,7 +65,6 @@ print(BankAccount.total_funds()) #==> 1162.0
 There's a vampire infestation! But that doesn't mean we don't have time to practice using class variables and methods.
 
 Write your code in a file named `part2.py`.
-
 
 Now that you've had some experience using class variables and methods it's time to test your knowledge of _when_ to use them.
 
