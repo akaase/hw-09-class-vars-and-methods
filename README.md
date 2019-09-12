@@ -8,7 +8,7 @@ In this assignment, you'll practice:
 * Defining and using instance variables
 * Defining and calling instance methods
 * Defining and using class variables
-* Defining and calling class instances
+* Defining and calling class methods
 
 This assignment can be challenging! Feel free to collaborate with other students on this assignment, but you should still hand in your own assignment.
 
