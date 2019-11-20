@@ -18,9 +18,9 @@ You know what you're doing by now! :grin:
 
 ---
 
-# Part 1: Bank Account
+# Exercise 1: Bank Account
 
-Write your code in a file named `part1.py`.
+Write your code in a file named `exercise1.py`.
 
 1. Create a class called `BankAccount`.
 1. Add a *class variable* called `interest_rate` that is a **float** representing the interest rate for all the accounts in the bank. This is a class variable because it is used across all of the accounts.
@@ -64,15 +64,15 @@ print(BankAccount.total_funds()) #==> 1162.0
 
 ---
 
-# Part 2: Vampire Infestation
+# Exercise 2: Vampire Infestation
 
 There's a vampire infestation! But that doesn't mean we don't have time to practice using class variables and methods.
 
-Write your code in a file named `part2.py`.
+Write your code in a file named `exercise2.py`.
 
 Now that you've had some experience using class variables and methods it's time to test your knowledge of _when_ to use them.
 
-Your task is to create a `Vampire` class that stores a list of vampires (a coven, if you will).
+Your task is to create a `Vampire` class that stores a list of vampires (a `coven`, if you will).
 
 Every vampire has a `name`, `age`, an `in_coffin` boolean, and a `drank_blood_today` boolean.
 
@@ -87,11 +87,17 @@ Your class should have the following methods:
 * `sunset`, which sets `drank_blood_today` and `in_coffin` to false for the entire coven, as they go out in search of blood
 * `go_home`, which sets a vampire's `in_coffin` boolean to true
 
-It's up to you to determine whether each method should be an instance method or a class method. You'll also have to decide what instance and class variables you need.
+It's up to you to determine whether each method should be an instance method or a class method.
 
-If you're not sure whether a method should be an instance method or a class method, starting to write the body of the method may help you figure it out based on what data you need access to.If you're still uncertain, don't be afraid to ask an instructor for help during office hours.
+You'll also have to decide what instance and class variables you need.
+
+If you're not sure whether a method should be an instance method or a class method, starting to write the body of the method may help you figure it out based on what data you need access to. 
+
+If you're still uncertain, don't be afraid to ask an instructor for help during office hours.
 
 Good luck!
+
+
 
 ---
 
