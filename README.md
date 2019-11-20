@@ -78,26 +78,28 @@ Every vampire has a `name`, `age`, an `in_coffin` boolean, and a `drank_blood_to
 
 Every day at sunset the vampires leave their coffins in search of blood. If they don't drink blood and get back to their coffins before sunrise, they die.
 
-Your class should have the following methods:
+Your `Vampire` class should have the following methods:
 
 * `__init__`, which creates a new vampire and assigns values for each of its attributes
 * `create`, which creates a new vampire and adds it to the coven
 * `drink_blood`, which sets a vampire's `drank_blood_today` boolean to true
-* `sunrise`, which removes from the coven any vampires who are out of their coffins or who haven't drank any blood in the last day
 * `sunset`, which sets `drank_blood_today` and `in_coffin` to false for the entire coven, as they go out in search of blood
 * `go_home`, which sets a vampire's `in_coffin` boolean to true
+* `sunrise`, which removes from the coven any vampires who are out of their coffins or who haven't drank any blood in the last day
 
 It's up to you to determine whether each method should be an instance method or a class method.
 
 You'll also have to decide what instance and class variables you need.
 
-If you're not sure whether a method should be an instance method or a class method, starting to write the body of the method may help you figure it out based on what data you need access to. 
+If you're not sure whether a method should be an instance method or a class method, starting to write the body of the method may help you figure it out based on what data you need access to.
 
 If you're still uncertain, don't be afraid to ask an instructor for help during office hours.
 
 Good luck!
 
+**Big Hint**: For the `sunrise` method, you'll have to iterate through a list. Be extremely careful: [Thou Shalt Not Modify A List During Iteration](https://unspecified.wordpress.com/2009/02/12/thou-shalt-not-modify-a-list-during-iteration/)! 
 
+Instead, as the author of the article suggests, "You could construct a new list during iteration rather than mutating the existing one. (For example, rather than removing all the elements which satisfy a condition, insert into a new list all the elements which don’t)."
 
 ---
 
