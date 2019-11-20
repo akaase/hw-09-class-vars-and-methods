@@ -1,5 +1,38 @@
 class BankAccount:
-    ???
+    interest_rate = 0.01
+    accounts = []
+
+    def __init__(self):
+        self.balance = 0
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("You don't have that much money.")
+
+    @classmethod
+    def create(cls):
+        ba = BankAccount()
+        cls.accounts.append(ba)
+        return ba
+
+    @classmethod
+    def total_funds(cls):
+        total = 0
+        for account in cls.accounts:
+            total += account.balance
+        return total
+        # or:
+        # return sum(account.balance for account in cls.accounts)
+
+    @classmethod
+    def add_interest(cls):
+        for account in cls.accounts:
+            account.balance += account.balance * cls.interest_rate
 
 def main():
     my_account = BankAccount.create()
