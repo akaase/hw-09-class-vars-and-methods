@@ -23,21 +23,24 @@ You know what you're doing by now! :grin:
 Write your code in a file named `exercise1.py`.
 
 1. Create a class called `BankAccount`.
-1. Add a *class variable* called `interest_rate` that is a **float** representing the interest rate for all the accounts in the bank. This is a class variable because it is used across all of the accounts.
-1. Add another class variable called `accounts` that starts as an empty list. This will eventually store the collection of all bank accounts in the bank.
-1. Add an `__init__` instance method that sets the bank account's `balance` to zero.
-   The `balance` is stored in an instance variable because the value needs to be different from account to account.
-1. Add an instance method called `deposit` that accepts a number as an argument and adds that amount to that account's balance.
-   `deposit` needs to be an instance method because it pertains to a *single, specific* account.
-1. Add an instance method called `withdraw` that accepts a number as an argument and subtracts that amount from the account's balance.
-   (What should happen if you try to withdraw more money than you have?)
-1. Add a *class method* called `create` that makes a new instance of `BankAccount` and adds it to the `accounts` class variable so that it is kept track of.
-  `create` should return the new account object.
-  `create` needs to be a class method because *at the time we run it* there is no *single, specific* account instance that we are working on.
-1. Add a class method called `total_funds` that returns the sum of all balances across all accounts in the `accounts` class variable.  
-   `total_funds` needs to be a class method because it *does not* pertain to any *single, specific* account.
-1. Add a class method called `add_interest` that iterates through all accounts and increases their balances according to the `interest_rate` in effect for all accounts.
-   `add_interest` needs to be a class method because it operates on _all_ bank accounts, not a _single, specific_ account.
+1. Add a **class variable** called `interest_rate` that is a **float** representing the interest rate for all the accounts in the bank
+   * `interest_rate` is a class variable because it is used across all of the accounts in the bank!
+1. Add another **class variable** called `accounts` that starts as an empty list
+   * This will eventually store the collection of all the accounts in the bank
+1. Add an `__init__` **instance method** that sets the bank account's `balance` to zero
+   * The `balance` is stored in an instance variable because the value needs to be different from account to account
+1. Add an **instance method** called `deposit` that accepts a number as an argument and adds that amount to that account's balance
+   * `deposit` needs to be an instance method because it pertains to a *single, specific* account.
+1. Add an **instance method** called `withdraw` that accepts a number as an argument and subtracts that amount from the account's balance
+   * Why is `withdraw` an instance method, not a class method?
+   * What should happen if you try to withdraw more money than you have?
+1. Add a **class method** called `create` that makes a new instance of `BankAccount`, and adds it to the `accounts` class variable so that it is kept track of
+   * `create` should return the new account object
+   * `create` needs to be a class method because *at the time we run the method*, there is no *single, specific* account instance that we are working with
+1. Add a **class method** called `total_funds` that returns the sum of all balances across all accounts in the `accounts` class variable
+   * `total_funds` needs to be a class method because it *does not* pertain to any *single, specific* account
+1. Add a **class method** called `add_interest` that iterates through all accounts, and increases their balances according to the `interest_rate` in effect for all accounts
+   * `add_interest` needs to be a class method because it operates on _all_ bank accounts, not a _single, specific_ account.
 
 ### Example output
 
@@ -46,20 +49,20 @@ Assuming that you have set the `interest_rate` to `0.01`:
 ```
 my_account = BankAccount.create()
 your_account = BankAccount.create()
-print(my_account.balance) #==> 0
-print(BankAccount.total_funds()) #==> 0
+print(my_account.balance) #--> 0
+print(BankAccount.total_funds()) #--> 0
 my_account.deposit(200)
 your_account.deposit(1000)
-print(my_account.balance) #==> 200
-print(your_account.balance) #==> 1000
-print(BankAccount.total_funds()) #==> 1200
+print(my_account.balance) #--> 200
+print(your_account.balance) #--> 1000
+print(BankAccount.total_funds()) #--> 1200
 BankAccount.add_interest()
-print(my_account.balance) #==> 202.0
-print(your_account.balance) #==> 1010.0
-print(BankAccount.total_funds()) #==> 1212.0
+print(my_account.balance) #--> 202.0
+print(your_account.balance) #--> 1010.0
+print(BankAccount.total_funds()) #--> 1212.0
 my_account.withdraw(50)
-print(my_account.balance) #==> 152.0
-print(BankAccount.total_funds()) #==> 1162.0
+print(my_account.balance) #--> 152.0
+print(BankAccount.total_funds()) #--> 1162.0
 ```
 
 ---
@@ -103,7 +106,7 @@ Instead, as the author of the article suggests, "You could construct a new list 
 
 ---
 
-# Food for Thought
+# Parting Thought: Bank Accounts and Vampires
 
 You're done! But here's a parting thought:
 
