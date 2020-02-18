@@ -20,9 +20,13 @@ You know what you're doing by now! :grin:
 
 # Exercise 1: Bank Account
 
-Write your code in a file named `exercise1.py`.
+Some starter code is already in the file named `exercise1.py`.
 
-1. Create a class called `BankAccount`.
+Complete the rest of the program!
+
+*Do not modify any of the code in the `main()` function. Only modify the parts of the program indicated by `???`.*
+
+1. Fill in the rest of the `BankAccount` class.
 1. Add a **class variable** called `interest_rate` that is a **float** representing the interest rate for all the accounts in the bank
    * `interest_rate` is a class variable because it is used across all of the accounts in the bank!
 1. Add another **class variable** called `accounts` that starts as an empty list
@@ -44,25 +48,19 @@ Write your code in a file named `exercise1.py`.
 
 ### Example output
 
-Assuming that you have set the `interest_rate` to `0.01`:
+When you run the `exercise1.py` program after completing the `BankAccount` class,assuming that you have set the `interest_rate` to `0.01`, you should get the following output:
 
 ```
-my_account = BankAccount.create()
-your_account = BankAccount.create()
-print(my_account.balance) #--> 0
-print(BankAccount.total_funds()) #--> 0
-my_account.deposit(200)
-your_account.deposit(1000)
-print(my_account.balance) #--> 200
-print(your_account.balance) #--> 1000
-print(BankAccount.total_funds()) #--> 1200
-BankAccount.add_interest()
-print(my_account.balance) #--> 202.0
-print(your_account.balance) #--> 1010.0
-print(BankAccount.total_funds()) #--> 1212.0
-my_account.withdraw(50)
-print(my_account.balance) #--> 152.0
-print(BankAccount.total_funds()) #--> 1162.0
+0
+0
+200
+1000
+1200
+202.0
+1010.0
+1212.0
+152.0
+1162.0
 ```
 
 ---
@@ -71,7 +69,11 @@ print(BankAccount.total_funds()) #--> 1162.0
 
 There's a vampire infestation! But that doesn't mean we don't have time to practice using class variables and methods.
 
-Write your code in a file named `exercise2.py`.
+Some starter code is already in the file named `exercise2.py`.
+
+Complete the rest of the program!
+
+*Do not modify any of the code in the `main()` function. Only modify the parts of the program indicated by `???`.*
 
 Now that you've had some experience using class variables and methods it's time to test your knowledge of _when_ to use them.
 
@@ -103,6 +105,24 @@ Good luck!
 **Big Hint**: For the `sunrise` method, you'll have to iterate through a list. Be extremely careful: [Thou Shalt Not Modify A List During Iteration](https://unspecified.wordpress.com/2009/02/12/thou-shalt-not-modify-a-list-during-iteration/)! 
 
 Instead, as the author of the article suggests, "You could construct a new list during iteration rather than mutating the existing one. (For example, rather than removing all the elements which satisfy a condition, insert into a new list all the elements which don’t)."
+
+### Example output
+
+When you run the `exercise2.py` program after completing the `Vampire` class, you should get the following output:
+
+```
+Coven at the beginning:
+Riley
+Alice
+Jasper
+Renesmee
+Marcus
+Zafrina
+Demetri
+Coven at the end:
+Riley
+Renesmee
+```
 
 ---
 
